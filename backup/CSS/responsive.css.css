@@ -1,0 +1,79 @@
+@media screen and (min-width: 375px) {
+    .logo img {
+        margin-left: 0;
+				width: 96px;
+    }
+    .title {
+        font-size: 1.4em;
+    }
+    .sub-title {
+        letter-spacing: 1px;
+        }
+
+}
+@media screen and (min-width: 544px) {
+    .logo img {
+      	width: 96px;
+    }
+
+    .title {
+        letter-spacing: 0;
+    }
+    .sub-title {
+        letter-spacing: 0;
+        }
+
+    .projects_para {
+        text-align: left;
+        position: relative;
+        left: 10px;
+    }
+
+    .featured_work {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .first-image {
+        width: 30%;
+    }
+    .second-image {
+        width: 30%;
+    }
+    .third-image {
+        width: 30%;
+    }
+    .buffer {
+        width: 2.3%;
+    }
+    .project_name {
+        /* style names, spacing and positioning */
+        font-size: 1em;
+    }
+    .project_url {
+        /* style url, spacing and positioning */
+        font-size: 0.57em;
+    }
+
+}
+/* Responsive when the browser window is 'x' pixel or more */
+@media screen and (min-width: 1000px) {
+    body {
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project_url {
+        /* style url, spacing and positioning */
+        font-size: 0.9em;
+    }
+    .title {
+        /* style name in header, spacing and positioning */
+        font-size: 2.0em;
+        letter-spacing: 2px;
+    }
+    img {
+        border-radius: 10px;
+    }
+}

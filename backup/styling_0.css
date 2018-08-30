@@ -1,0 +1,225 @@
+html,
+header,
+section,
+div {
+    box-sizing: border-box;
+}
+
+body {
+		font-size: 20px;
+  	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for logo*/
+.logo img {
+    width: 60px;
+		height: 88px;
+}
+/* Styling for heading and flexcode*/
+.header-text {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.featured-work {
+	font-weight: lighter;
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* Styling for title and subtitle*/
+.title {
+	font-weight: lighter;
+  text-align: end;
+	font-size: 36px;
+}
+
+.sub-title {
+	font-weight: lighter;
+  text-align: end;
+	font-size: 18px;
+}
+/* Adding a line before the content using CSS property hr*/
+hr {
+    height: 1.3px;
+		padding: 0;
+    border: 0;
+    border-top: 1.3px solid #7d97ad;
+    margin: 0 10px 0 10px;
+}
+
+/* For main area */
+main {
+    width: 100%;
+}
+
+/* Adding some margin before the content actually starts  */
+.content {
+    margin: 12px;
+}
+
+
+/*  html-image adding Style  */
+.html-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* All the projects will be under the projects para- Styling  */
+.projects_para {
+    text-align: left;
+    letter-spacing: 5px;
+    position: relative;
+    top: 10px;
+    color: #a96;
+}
+
+/*For Future needs, styling all the projects separately so that if needed , we can stand out any particular project */
+/* Style First Image */
+.first-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Style Second Image */
+.second-image img {
+    /* center and size iamges */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Style Third Image */
+.third-image img {
+    /* center and size iamges */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style Various Project names */
+.project_name {
+    /* style names, spacing and positioning */
+    font-family: "Times New Roman", Times, serif";
+    font-size: 1.0em;
+    letter-spacing: 4px;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+/* Style various Project URL's */
+.project_url {
+    /* style url, spacing and positioning */
+    text-align: center;
+    font-size: 1em;
+    line-height: 0.5em;
+    position: relative;
+    top: -15px;
+}
+
+/* style and color hyperlinks */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* Various Breakpoint to content as screen chnages */
+@media screen and (min-width: 370px) {
+    .logo img {
+        margin-left: 0;
+				width: 96px;
+    }
+    .title {
+        font-size: 1.4em;
+    }
+    .sub-title {
+        letter-spacing: 1px;
+        }
+
+}
+@media screen and (min-width: 680px) {
+    .logo img {
+        width: 128px;
+    }
+    .title {
+        font-size: 2.0em;
+        letter-spacing: 0;
+    }
+    .sub-title {
+        letter-spacing: 2px;
+        }
+
+    .projects_para {
+        text-align: left;
+        position: relative;
+        left: 10px;
+    }
+
+    .featured_work {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .first-image {
+        width: 30%;
+    }
+    .second-image {
+        width: 30%;
+    }
+    .third-image {
+        width: 30%;
+    }
+    .buffer {
+        width: 3.3%:
+    }
+    .project_name {
+        /* style names, spacing and positioning */
+        font-size: 1em;
+    }
+    .project_url {
+        /* style url, spacing and positioning */
+        font-size: 0.8em;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    body {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        /* style name in header, spacing and positioning */
+        font-size: 2.0em;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        /* style name in header, spacing and positioning */
+        font-size: 1.8em;
+        letter-spacing: 2px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}
